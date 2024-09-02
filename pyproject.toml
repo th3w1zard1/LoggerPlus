@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["loggerplus", "examples", "utility"]
+packages = ["loggerplus", "utility"]
 
 [project]
 name = "LoggerPlus"
@@ -31,6 +31,34 @@ Documentation = "https://github.com/th3w1zard1/LoggerPlus/blob/master/README.md"
 Repository = "https://github.com/th3w1zard1/LoggerPlus.git"
 Issues = "https://github.com/th3w1zard1/LoggerPlus/issues"
 #Changelog = "https://github.com/th3w1zard1/LoggerPlus/blob/master/CHANGELOG.md"
+
+######################
+## Poetry           ##
+######################
+[tool.poetry]
+name = "LoggerPlus"
+version = "0.1.0"
+description = "A wrapper around the Python logging module that provides a more flexible and powerful logging solution."
+authors = ["Benjamin Auquite <halomastar@gmail.com>"]
+readme = "README.md"
+license = "LGPL-2.0"
+homepage = "https://github.com/th3w1zard1/LoggerPlus"
+repository = "https://github.com/th3w1zard1/LoggerPlus.git"
+documentation = "https://github.com/th3w1zard1/LoggerPlus/blob/master/README.md"
+keywords = ["logging", "python", "wrapper"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.extras]
+color = ["colorama"]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/th3w1zard1/LoggerPlus"
+Documentation = "https://github.com/th3w1zard1/LoggerPlus/blob/master/README.md"
+Repository = "https://github.com/th3w1zard1/LoggerPlus.git"
+Issues = "https://github.com/th3w1zard1/LoggerPlus/issues"
+# Changelog = "https://github.com/th3w1zard1/LoggerPlus/blob/master/CHANGELOG.md"
 
 ########################################################
 ## define only linter configurations below this point ##
