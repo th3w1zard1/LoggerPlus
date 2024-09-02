@@ -3,8 +3,8 @@ from __future__ import annotations
 from setuptools import setup
 
 setup(
-    name="LoggerPlus",
-    version="0.1.0",
+    name="loggerplus",
+    version="0.1.2",
     description="A wrapper around the Python logging module that provides a more flexible and powerful logging solution.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",

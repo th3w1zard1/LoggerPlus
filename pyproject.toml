@@ -6,8 +6,8 @@ build-backend = "setuptools.build_meta"
 packages = ["loggerplus", "utility"]
 
 [project]
-name = "LoggerPlus"
-version = "0.1.0"
+name = "loggerplus"
+version = "0.1.2"
 description = "A wrapper around the Python logging module that provides a more flexible and powerful logging solution."
 readme = "README.md"
 authors = [
@@ -36,8 +36,8 @@ Issues = "https://github.com/th3w1zard1/LoggerPlus/issues"
 ## Poetry           ##
 ######################
 [tool.poetry]
-name = "LoggerPlus"
-version = "0.1.0"
+name = "loggerplus"
+version = "0.1.2"
 description = "A wrapper around the Python logging module that provides a more flexible and powerful logging solution."
 authors = ["Benjamin Auquite <halomastar@gmail.com>"]
 readme = "README.md"
