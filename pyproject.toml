@@ -78,12 +78,6 @@ line_length = 175
 skip_gitignore = true
 multi_line_output = 3
 
-[tool.pyright.defineConstant]
-PYQT5 = true
-PYSIDE2 = false
-PYQT6 = false
-PYSIDE6 = false
-
 [tool.yapf]
 column_limit = 175
 ALLOW_SPLIT_BEFORE_DEFAULT_OR_NAMED_ASSIGNS = false
@@ -112,17 +106,8 @@ output-format = "grouped"  # Group violations by containing file.
 respect-gitignore = false
 
 src = [
-    "Libraries/LoggerPlus/src",
-    "Libraries/LoggerPlusGL/src",
-    "Libraries/LoggerPlusFont/src",
-    "Libraries/Utility/src",
-    "Tools/HolocronToolset/src",
-    "Tools/BatchPatcher/src",
-    "Tools/HoloPatcher/src",
-    "Tools/KotorDiff/src",
-    "Tools/GuiConverter/src",
-    "Tools/MDLDecompile/src",
-    "tests"
+    "loggerplus",
+    "utility"
 ]
 
 [tool.ruff.lint]
@@ -219,14 +204,6 @@ ignore = [
 "tests/*.py" = ["ALL"]
 ".github/*py" = ["INP001"]
 "__init__.py" = ["I001", "F401"]
-"globalsettings.py" = ["I001", "F401"]
-"Tools/HolocronToolset/src/toolset/*.py" = ["FBT003", "N802", "N803", "N806", "A001"]
-"Tools/HolocronToolset/src/toolset/uic/*.py" = ["ALL"]
-"resources_rc.py" = ["ALL"]
-".mdx" = ["ALL"]
-".mdl" = ["ALL"]
-"LoggerPlus/resource/formats/ncs/compiler/*.py" = ["ALL"]
-"tests/results" = ["ALL"]
 
 [tool.ruff.lint.flake8-pytest-style]
 fixture-parentheses = false
